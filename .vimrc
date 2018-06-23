@@ -31,6 +31,7 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scala setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype dot setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd Filetype markdown setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 
 " folding?
 set foldenable
