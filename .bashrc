@@ -92,10 +92,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -103,6 +99,30 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+# ssh-agent configuration
+
+# Set up ssh-agent
+SSH_ENV="$HOME/.ssh/environment"
+
+function start_agent {
+	echo "Initializing new SSH agent..."
+	touch $SSH_ENV
+	chmod 600 "${SSH_ENV}"
+	/usr/bin/ssh-agent | sed 's/^echo/#echo/' >> "${SSH_ENV}"
+	. "${SSH_ENV}" > /dev/null
+	/usr/bin/ssh-add
+}
+
+# Source SSH settings, if applicable
+if [ -f "${SSH_ENV}" ]; then
+	. "${SSH_ENV}" > /dev/null
+	kill -0 $SSH_AGENT_PID 2>/dev/null || {
+		start_agent
+}
+else
+	start_agent
 fi
 
 # enable programmable completion features (you don't need to enable
