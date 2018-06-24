@@ -26,7 +26,7 @@ set autoindent
 
 " spaces rule, tabs drool. four spaces drool more.
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype python setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype python setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scala setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype dot setlocal ts=2 sts=2 sw=2 noexpandtab
