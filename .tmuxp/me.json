@@ -1,0 +1,20 @@
+{
+  "session_name": "me",
+  "windows": [
+    {
+      "focus": "true",
+      "options": {},
+      "window_name": "python3",
+      "layout": "12dc,204x61,0,0{98x61,0,0,0,105x61,99,0[105x40,99,0,1,105x20,99,41,2]}",
+      "start_directory": "/home/jeff",
+      "panes": [
+        {
+          "shell_command": "python3",
+          "focus": "true"
+        },
+        "bash",
+        "bash"
+      ]
+    }
+  ]
+}

@@ -1,9 +1,9 @@
-*
+/*
 
 !.gitignore
 !.bashrc
 !.inputrc
 !.vimrc
-!.vim
-!.vim/*
+!.vim/
 !.tmux.conf
+!.tmuxp/
