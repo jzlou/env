@@ -32,6 +32,8 @@ autocmd Filetype scala setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype dot setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd Filetype markdown setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype json setlocal ts=4 sts=4 sw=4 expandtab
+autocmd Filetype yml setlocal ts=2 sts=2 sw=4 expandtab
 
 " folding?
 set foldenable
