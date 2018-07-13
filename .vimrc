@@ -38,7 +38,7 @@ autocmd Filetype yml setlocal ts=2 sts=2 sw=4 expandtab
 " folding?
 set foldenable
 set foldlevelstart=20
-set foldmethod=indent
+set foldmethod=syntax
 nnoremap <space> za
 
 " CtrlP settings
