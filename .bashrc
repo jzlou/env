@@ -198,4 +198,8 @@ if [ -f $HOME/.bash_exports ]; then
 	. $HOME/.bash_exports
 fi
 
+if command -v tmux>/dev/null; then
+	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
 export PS1="\[\033[38;5;214m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;63m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;207m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \d \t\[$(tput sgr0)\] \[\e[35m\]\`parse_git_branch\`\[\e[m\] \n$ "
