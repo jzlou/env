@@ -7,12 +7,12 @@
 [submodule "ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
-[submodule "jedi-vim"]
-	path = .vim/bundle/jedi-vim
-	url = git@github.com:davidhalter/jedi-vim.git
 [submodule ".vim/bundle/ale"]
 	path = .vim/bundle/ale
 	url = git@github.com:w0rp/ale.git
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
 	url = git@github.com:elzr/vim-json.git
+[submodule ".vim/bundle/vim-tmux-navigator"]
+	path = .vim/bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
