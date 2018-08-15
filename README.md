@@ -6,7 +6,7 @@ Use pathogen and the following things:
 
 - auto-pairs
 - ctrlp
-- syntastic
+- ale
 - vim-json
 - vim-tmux-navigator
 
