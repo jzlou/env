@@ -4,7 +4,7 @@
 
 Use pathogen and the following things:
 
-- auto-paris
+- auto-pairs
 - ctrlp
 - syntastic
 - vim-json
@@ -21,8 +21,10 @@ Use the following tmux things:
 
 ```
 git init
-git remote add origin $url_of_clone_source
+git remote add origin git@github.com:jzlou/env.git
 git fetch origin
 git checkout -b master --track origin/master
 git reset origin/master
+git submodule init
+git submodule update
 ```
