@@ -49,3 +49,6 @@ let g:ctrlp_working_path_mode=0
 let g:ale_linters = { 'python': ['flake8'] }
 
 set nocompatible
+
+"for tablet okness
+imap jk <esc>
