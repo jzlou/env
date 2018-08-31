@@ -49,7 +49,7 @@ let g:ctrlp_working_path_mode=0
 let g:ale_linters = { 'python': ['flake8'] }
 
 " vim airline
-leg g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 set nocompatible
 
