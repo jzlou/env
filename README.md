@@ -28,3 +28,7 @@ git reset origin/master
 git submodule init
 git submodule update
 ```
+
+## adding new vim plugin
+
+`cd ~/.vim/bundle && git submodule add <submodule-url>`
