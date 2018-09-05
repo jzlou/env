@@ -53,5 +53,8 @@ set nocompatible
 "for tablet okness
 imap jk <esc>
 
+" stop the bells
+set visualbell
+
 " Pytest
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
