@@ -55,3 +55,6 @@ set nocompatible
 
 "for tablet okness
 imap jk <esc>
+
+" Pytest
+nmap <silent><Leader>f <Esc>:Pytest file<CR>
