@@ -9,6 +9,7 @@ Use pathogen and the following things:
 - ale
 - vim-json
 - vim-tmux-navigator
+- vim-polyglot
 
 ## TMUX
 
