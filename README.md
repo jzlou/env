@@ -10,6 +10,7 @@ Use pathogen and the following things:
 - vim-json
 - vim-tmux-navigator
 - vim-polyglot
+- YouCompleteMe
 
 ## TMUX
 
@@ -33,3 +34,8 @@ git submodule update
 ## adding new vim plugin
 
 `cd ~/.vim/bundle && git submodule add <submodule-url>`
+
+### YouCompleteMe
+
+Install Jedi for Python autocomplete `pip install jedi`
+`cd ~/.vim/bundle/YouCompleteMe && python3 ./install.py --ts-completer`
