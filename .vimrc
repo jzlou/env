@@ -58,3 +58,6 @@ set visualbell
 
 " Pytest
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
+
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
