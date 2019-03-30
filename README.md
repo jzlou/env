@@ -37,5 +37,17 @@ git submodule update
 
 ### YouCompleteMe
 
-Install Jedi for Python autocomplete `pip install jedi`
-`cd ~/.vim/bundle/YouCompleteMe && python3 ./install.py --ts-completer`
+Install Jedi for Python autocomplete. Install node and npm first.
+
+- `pip install jedi`
+- `cd ~/.vim/bundle/YouCompleteMe && python3 ./install.py --ts-completer`
+
+# Things that I seem to install on Ubuntu commonly
+
+i.e. install with a bash script maybe?
+
+- curl
+- docker
+- node & npm & yarn
+- python3 & pip & flake8 & virtualenvwrapper
+- tmux
