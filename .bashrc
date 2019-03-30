@@ -149,8 +149,12 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 # python virtualenvwrapper
 # some info here https://docs.python-guide.org/dev/virtualenvs/
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/Envs
 export PROJECT_HOME=$HOME/projects
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 
 cd ~
