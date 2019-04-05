@@ -21,6 +21,9 @@ set wildmenu
 " done with the search
 nnoremap<F3> :noh<CR>
 
+" make a json nice
+nmap =j :%!python -m json.tool<CR>
+
 filetype plugin indent on
 set autoindent
 
