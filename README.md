@@ -28,7 +28,7 @@ git fetch origin
 git checkout -b master --track origin/master
 git reset origin/master
 git submodule init
-git submodule update
+git submodule update --recursive
 ```
 
 ## adding new vim plugin
