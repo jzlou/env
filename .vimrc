@@ -3,6 +3,7 @@ execute pathogen#infect()
 " for the looks
 set ruler
 set number
+set showcmd
 set cursorline
 set lazyredraw
 colorscheme badwolf
