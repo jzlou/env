@@ -2,11 +2,18 @@ execute pathogen#infect()
 
 " for the looks
 set ruler
-set number
 set showcmd
 set cursorline
 set lazyredraw
+set background=dark
 colorscheme badwolf
+set number relativenumber
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 if !exists("g:syntax_on")
     syntax enable
