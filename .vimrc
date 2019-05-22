@@ -76,3 +76,4 @@ nmap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Nerdtree
 autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
