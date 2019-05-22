@@ -72,3 +72,7 @@ nmap <silent><Leader>f <Esc>:Pytest file<CR>
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
+nmap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" Nerdtree
+autocmd vimenter * NERDTree
