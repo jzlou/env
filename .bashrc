@@ -92,6 +92,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias glop="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%Cblue%an|%Cgreen%d %Creset%s' --date=short | column -ts'|' | less -r"
+# lock screen from terminal for i3
+alias lock='i3lock & sleep 5 && xset dpms force off'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
