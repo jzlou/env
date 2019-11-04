@@ -1,4 +1,4 @@
-.vim/.netrwhist
+.netrwhist
 /*
 
 !.gitignore
@@ -9,4 +9,4 @@
 !.tmux.conf
 !.tmux-themepack
 !.tmuxp/
-
+!.i3/
