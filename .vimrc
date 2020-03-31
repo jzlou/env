@@ -82,4 +82,4 @@ autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Vimdiff
-au VimEnter * if &diff | execute 'windo set wrap' | endif
+autocmd FilterWritePre * if &diff | setlocal wrap< | endif
