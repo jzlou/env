@@ -60,7 +60,12 @@ let g:ctrlp_match_window='bottom,order:ttb'
 let g:ctrlp_switch_buffer=0
 let g:ctrlp_working_path_mode=0
 
-let g:ale_linters = { 'python': ['flake8'] }
+"linting
+let g:ale_linters = { 'python': ['flake8'], 'rust': ['rls'] }
+let g:ale_completion_enabled = 1
+let g:ale_sign_error = "✗"
+let g:ale_sign_warning = "⚠"
+let g:ale_rust_rls_toolchain = 'stable'
 
 set nocompatible
 
