@@ -82,9 +82,5 @@ nmap <silent><Leader>f <Esc>:Pytest file<CR>
 let g:ycm_autoclose_preview_window_after_insertion = 1
 nmap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-" Nerdtree
-autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 " Vimdiff
 autocmd FilterWritePre * if &diff | setlocal wrap< | endif
