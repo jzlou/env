@@ -48,6 +48,7 @@ autocmd Filetype markdown setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype json setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype yml setlocal ts=2 sts=2 sw=4 expandtab
+autocmd Filetype sml setlocal ts=4 sts=4 sw=4 expandtab
 set tabstop=4
 set shiftwidth=4
 set expandtab
